@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"pl.polsl.lab.db"},{"l":"pl.polsl.lab.exception"},{"l":"pl.polsl.lab.model"},{"l":"pl.polsl.lab.motorcyclescatalogdatabase"},{"l":"pl.polsl.lab.motorcyclescatalogdatabase.resources"},{"l":"pl.polsl.lab.services"}];updateSearchResults();
