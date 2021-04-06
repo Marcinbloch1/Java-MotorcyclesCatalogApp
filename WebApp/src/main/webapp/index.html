@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Motorcycles catalog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <link rel="stylesheet" href="css/main.css" />
+        
+    </head>
+    <body onload="load('searchedText', 'tableMotorcycles', 'motorcyclesComboBox', 'historyList');">
+            <div class="header">
+              <h1>Motorcycles Catalog</h1>
+            </div>
+            <div class="topnav">
+                <select name="motorcyclesComboBoxName" id="motorcyclesComboBox">
+                        <option value="Category">Category</option>
+                        <option value="Brand">Brand</option>
+                        <option value="Model">Model</option>
+                        <option value="ProductionYear">Production Year</option>
+                        <option value="EngineCapacity">Engine Capacity</option>
+                        <option value="HorsePower">Horse Power</option>
+                        <option value="MaxSpeed">Max Speed</option>
+                </select>
+                <input type="text" id="searchedText" name="firstName" />
+                <input type="button" id="searchButton" value="Search" onclick="getTable('searchedText', 'tableMotorcycles', 'motorcyclesComboBox');" />
+            </div>
+
+            <div class="row">
+              <div class="leftcolumn">
+                <div class="card">
+                    <h2>CATALOG</h2>
+                    <table class="greyGridTable">
+                            <thead>
+                                <tr>
+                                    <th>Nr</th>
+                                    <th>Category</th>
+                                    <th>Brand</th>
+                                    <th>Model</th>
+                                    <th>Production Year</th>
+                                    <th>Engine Capacity</th>
+                                    <th>Horse Power</th>
+                                    <th>Max Speed</th>
+                                </tr>
+                        </thead>
+                            <tbody id="tableMotorcycles">
+                            </tbody>
+                        </table>
+                </div>
+              </div>
+              <div class="rightcolumn">
+                <div class="card">
+                  <h2>Search History</h2>
+                  <input type="button" id="historyButton" value="Show history" onclick="getHistory('historyList');" />
+                  <div id="historyList" class="historyList">
+                  </div>
+                </div>
+              </div>
+            </div>
+    </body>
+</html>

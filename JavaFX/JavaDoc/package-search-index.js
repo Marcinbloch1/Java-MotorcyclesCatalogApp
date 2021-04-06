@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"MotorcyclesCatalog","l":"pl.polsl.lab"},{"m":"MotorcyclesCatalog","l":"pl.polsl.lab.controller"},{"m":"MotorcyclesCatalog","l":"pl.polsl.lab.model"}];updateSearchResults();
